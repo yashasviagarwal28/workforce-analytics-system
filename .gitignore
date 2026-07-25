@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+
+# macOS files
+.DS_Store
+
+# Test and tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated project data
+data/raw/*
+data/processed/*
+
+# Keep empty data directories
+!data/raw/.gitkeep
+!data/processed/.gitkeep
