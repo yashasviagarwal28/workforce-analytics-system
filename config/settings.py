@@ -1,5 +1,3 @@
-"""Central configuration for the OpsPulse project."""
-
 RANDOM_SEED = 42
 
 NUMBER_OF_EMPLOYEES = 100
@@ -29,3 +27,43 @@ EMPLOYMENT_STATUSES = [
     "on_leave",
     "terminated",
 ]
+
+
+JOB_TITLES_BY_DEPARTMENT = {
+    "D001": [
+        "Operations Coordinator",
+        "Shift Supervisor",
+        "Field Technician",
+        "Operations Analyst",
+    ],
+    "D002": [
+        "Financial Analyst",
+        "Payroll Specialist",
+        "Accountant",
+        "Finance Manager",
+    ],
+    "D003": [
+        "Software Engineer",
+        "Data Engineer",
+        "Systems Analyst",
+        "Technical Support Specialist",
+    ],
+}
+
+HOURLY_RATE_RANGES = {
+    "D001": {
+        "minimum": 22,
+        "maximum": 42,
+    },
+    "D002": {
+        "minimum": 25,
+        "maximum": 48,
+    },
+    "D003": {
+        "minimum": 30,
+        "maximum": 60,
+    },
+}
+
+EARLIEST_HIRE_DATE = "2015-01-01"
+LATEST_HIRE_DATE = "2025-12-31"
