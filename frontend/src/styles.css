@@ -1,0 +1,26 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #18202a;
+  background: #f4f6f8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1200px; margin: 0 auto; padding: 32px 20px 64px; }
+header { display: flex; align-items: start; justify-content: space-between; gap: 24px; }
+h1 { margin: 0; font-size: 2.5rem; }
+h2 { margin-top: 0; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; font-weight: 700; }
+button, select { font: inherit; }
+button { padding: 10px 16px; border: 1px solid #ccd3da; background: white; border-radius: 8px; cursor: pointer; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 32px 0; }
+.cards article, .panel { background: white; border: 1px solid #e1e6eb; border-radius: 12px; padding: 20px; }
+.cards strong { display: block; font-size: 2rem; }
+.cards span { color: #5d6874; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e7ebef; }
+th { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; }
+.error { background: #fff0f0; border: 1px solid #e5aaaa; padding: 12px; border-radius: 8px; }
+@media (max-width: 800px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
