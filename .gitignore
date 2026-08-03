@@ -24,3 +24,24 @@ data/processed/*
 # Keep empty data directories
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+cat >> .gitignore <<'EOF'
+
+# Generated workforce data
+data/raw/*.csv
+data/processed/*.parquet
+
+# Trained model and evaluation outputs
+artifacts/
+*.joblib
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Local backups and caches
+src-backup/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+EOF
